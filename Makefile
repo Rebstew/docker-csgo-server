@@ -1,7 +1,7 @@
 .PHONY: build
 build:
-	docker build -t gonzih/csgo-server .
+	docker build -t rebstew/csgo-dm-server .
 
 .PHONY: push
 push: build
-	docker push gonzih/csgo-server
+	docker push rebstew/csgo-dm-server

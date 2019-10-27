@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Max Gonzih <gonzih at gmail dot com>
+LABEL maintainer="rebstew"
 
 ENV USER csgo
 ENV HOME /home/$USER
@@ -37,4 +37,4 @@ EXPOSE 27015/udp
 
 WORKDIR /home/$USER/hlserver
 ENTRYPOINT ["./csgo.sh"]
-CMD ["-console" "-usercon" "+game_type" "0" "+game_mode" "1" "+mapgroup" "mg_active" "+map" "de_cache"]
+CMD ["-console" "-usercon" "+game_type" "1" "+game_mode" "2" "+mapgroup" "mg_active" "+map" "de_dust2"]
